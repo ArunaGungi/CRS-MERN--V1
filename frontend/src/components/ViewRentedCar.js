@@ -45,8 +45,8 @@ export const ViewRentedCar = () => {
             {rentData.map((res, key) => (
                 <tr key={key}>
                     <td>{res.carname}</td>
-                    <td>{res.rentduration}</td>
-                    <td>{res.totalprice}</td>
+                    <td>{res.rentduration} days</td>
+                    <td>{res.totalprice}$</td>
                     <td>{res.owneremail}</td>
                     <td>{res.status ? res.status : "Pending Approval"}</td>
                 </tr>

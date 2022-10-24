@@ -28,7 +28,7 @@ export const ApproveCar = () => {
         setTimeout(() =>  {
             sendStatusEmail(carname, useremail);
         },3000);
-        //window.location.reload(false);
+        window.location.reload(false);
     }
     const rejectCar = async(_id, carname, useremail) => {
         await axios.put(`http://localhost:2300/crs/api/v1/updateStatus/${_id}`,{status:"rejected"})
@@ -36,7 +36,7 @@ export const ApproveCar = () => {
         setTimeout(() =>  {
             sendStatusEmail(carname, useremail);
         },3000);
-        //window.location.reload(false);
+        window.location.reload(false);
     }
 
     console.log(rentData);

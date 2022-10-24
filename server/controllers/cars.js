@@ -2,7 +2,7 @@ import carDetails from "../models/cars.js";
 import rentDetails from "../models/rentedCars.js";
 
 export const cars = async(req,res) => {
-    //const data = req.body;
+    const data = req.body;
     //console.log(data);
     const addcars = new carDetails(data);
     try {
@@ -51,8 +51,8 @@ export const showCityWiseCars = async(req,res) => {
 }
 
 export const rentedCars = async(req,res) => {
-    //const data = req.body;
-    //const rentData = new rentDetails(data);
+    const data = req.body;
+    const rentData = new rentDetails(data);
     try {
         await rentData.save();
         res.status(200).send("rent data successfully added");
