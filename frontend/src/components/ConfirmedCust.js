@@ -16,8 +16,8 @@ export const ConfirmedCust = () => {
         <div id="topnav">
             <Link to="/" className={"rentx"}>HOME</Link>
 			<Link to="/viewrentedcar" className={"status"}>VIEW RENTED CARS</Link>
-			<Link to="/contact" className={"contact"}>CONTACT OWNER</Link>
-            <Link to="/contact" className={"contact"}>VIEW MORE CARS</Link>
+			<Link to="/contactOwner" className={"contact"}>CONTACT OWNER</Link>
+            <Link to="/rentcar" className={"contact"}>VIEW MORE CARS</Link>
 			<Link to="/" className={"logout"} onClick={setLogout}>LOG OUT</Link>
         </div>
 

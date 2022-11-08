@@ -1,12 +1,12 @@
 import "../static/stylesheets/login.css";
 import {useState} from "react";
-import axios from "axios";
 import { useNavigate, Routes, Route } from "react-router-dom";
 import { CustHome } from "./CustHome";
 import { OwnerHome } from "./OwnerHome";
 import { AdminHome } from "./AdminHome";
 import {Link} from "react-router-dom";
 import { Landingpage } from "./Landingpage";
+import axios from "axios";
 
 export const Login = () => {
 
@@ -32,7 +32,7 @@ export const Login = () => {
 			const result = await axios.post("http://localhost:2300/crs/api/v1/register",credentials);
 			if(result.status == 200) {
 				window.alert("Registration successful");
-				
+				window.localStorage.setItem("email",credentials.email); 
 				const state = window.localStorage.getItem("homeredirection");
 				if(state === "customer")
 					navigate('/custdashboard')

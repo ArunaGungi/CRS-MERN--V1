@@ -18,7 +18,7 @@ export const CustHome = () => {
 			<Link to="/" id={"rentx"}>HOME</Link>
 			<Link to="/rentcar" id={"rentcar"}>RENT A CAR</Link>
 			<Link to="/viewrentedcar" id={"history"}>VIEW HISTORY</Link>
-			<Link to="/contact" id={"contactowner"}>CONTACT OWNER</Link>
+			<Link to="/contactOwner" id={"contactowner"}>CONTACT OWNER</Link>
 			<Link to="/" id={"logout"} onClick={setLogout}>LOG OUT</Link>
 		</div>
 		</div>

@@ -7,6 +7,7 @@ import { AdminViewCars } from './components/AdminViewCars';
 import { ApproveCar } from './components/ApproveCar';
 import { ConfirmedCust } from './components/ConfirmedCust';
 import { ConfirmRent } from './components/ConfirmRent';
+import ContactOwner from './components/ContactOwner';
 import { CustHome } from './components/CustHome';
 import { Landingpage } from './components/Landingpage';
 import { Login } from './components/Login';
@@ -39,6 +40,7 @@ function App() {
           <Route path="/adminviewcars" element={<AdminViewCars/>}></Route>
           <Route path="/viewallusers" element={<ViewAllUsers/>}></Route>
           <Route path="/viewallowners" element={<ViewAllOwners/>}></Route>
+          <Route path="/contactOwner" element={<ContactOwner/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

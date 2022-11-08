@@ -29,8 +29,8 @@ export const ViewRentedCar = () => {
         <div id="topnav">
 			<Link to="/" className={"rentx"}>HOME</Link>
 			<Link to="/viewrentedcar" className={"history"}>VIEW RENTED CARS</Link>
-			<Link to="/rentcar" className={"status"}>RENT CAR</Link>
-			<Link to="/contact" className={"contact"}>CONTACT ADMIN</Link>
+			<Link to="/rentcar" className={"status"}>RENT A CAR</Link>
+			<Link to="/contactOwner" className={"contact"}>CONTACT OWNER</Link>
 			<Link to="/" className={"logout"} onClick={setLogout}>LOG OUT</Link>
 		</div>
         <table id="cars">
