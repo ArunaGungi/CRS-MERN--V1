@@ -98,3 +98,16 @@ export const rentedCarWithUsers = async(req,res) => {
     }
 }
 
+export const updateRentDuration = async(req,res) => {
+    const _id = req.params.id;
+    const data = req.body;
+    console.log(data);
+    try {
+        const result = await rentDetails.findOneAndUpdate(_id, data);
+        res.status(200).send(result);
+    }
+    catch(error) {
+        console.log(error);
+        res.status(400).send(error);
+    }
+}
